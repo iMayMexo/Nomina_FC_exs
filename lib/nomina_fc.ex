@@ -1,18 +1,9 @@
 defmodule NominaFc do
-  @moduledoc """
-  Documentation for `NominaFc`.
-  """
+  defmodule Players do
+    defstruct [:nombre, :nivel, :goles, :sueldo, :bono, :sueldo_completo, :equipo]
+  end
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> NominaFc.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  defmodule Rules do
+    defstruct [:nivel, :bono]
   end
 end
